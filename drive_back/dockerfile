@@ -1,7 +1,0 @@
-FROM python:3.10
-WORKDIR /src/app/
-ADD . /src/app/
-CMD ["python", "main.py"]
-
-# 도커 빌드 명령어 : docker build -t auto_drive .
-# 도커 실행 명령어 : docker run auto_drive
