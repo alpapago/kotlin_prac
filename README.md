@@ -1,2 +1,1 @@
-# auto_driving
-ssafy 자율주행 특화 프로젝트 입니다
+# kotlin 로그인, 회원정보수정/삭제 연습
