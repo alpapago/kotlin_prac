@@ -8,6 +8,9 @@ import jakarta.persistence.Table
 @Entity
 @Table(name="member")
 class User(
+    @Id @GeneratedValue var id:Long?=null,
+
     var userId:String,
     var password:String,
-    @Id @GeneratedValue var id:Long?=null)
+    var telNumber:String
+    )
