@@ -30,6 +30,10 @@ dependencies {
 //	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("mysql:mysql-connector-java:8.0.23")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	// Swagger
+	// http://localhost:8080/swagger-ui/index.html
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
+	implementation("javax.servlet:javax.servlet-api:4.0.1")
 }
 
 tasks.withType<KotlinCompile> {
