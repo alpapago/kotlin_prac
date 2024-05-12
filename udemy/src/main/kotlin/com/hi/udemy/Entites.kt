@@ -12,5 +12,6 @@ class User(
 
     var userId:String,
     var password:String,
-    var telNumber:String
+    var telNumber:String,
+    var nickname: String,
     )
