@@ -1,0 +1,31 @@
+spserver:
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: Server
+  boot:
+    debug: true
+  datasource:
+    url: jdbc:mysql://testdb.c3a6caqge7zc.ap-northeast-2.rds.amazonaws.com:3306/petaro
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
